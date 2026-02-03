@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.38.0",
+    "dotted-map": "latest",
     "lucide-react": "^0.562.0",
     "next": "latest",
     "react": "^19.2.3",

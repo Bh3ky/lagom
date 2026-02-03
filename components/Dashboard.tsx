@@ -12,13 +12,7 @@ import {
 } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import MetricCard from './MetricCard';
-
-// Simplified World Map SVG for the dashboard visualization
-const WorldMapSVG = () => (
-  <svg viewBox="0 0 1000 500" className="w-full h-full opacity-20 fill-zinc-700 stroke-zinc-800 stroke-[0.5]">
-    <path d="M165,114c-1,1-4,1-6,2c-1,1-3,2-4,4l-3,3l-5,1c-3,0-6,1-8,2c-1,1-2,3-2,4c0,3-1,4-1,6c0,1,0,3,1,5c0,1,0,3,1,4l3,3c15,10,24,14,35,16c3,1,6,1,10,1c4,0,8-1,12-2c3-1,6-3,8-5c2-2,3-4,3-6c0-3,1-5,3-7c1-2,4-3,6-4c3-1,6-1,8-1c3,0,6,1,8,2c2,1,3,3,4,4c1,3,3,4,5,5c2,1,5,1,7,1c3,0,5-1,7-2c1-1,3-3,3-4c0-3,1-5,3-7c1-2,4-3,6-4c3-1,6-1,8-1c3,0,5,1,7,2c2,1,3,3,4,4c1,3,3,4,5,5c2,1,5,1,7,1c3,0,5-1,7-2c1-1,2-3,2-4c0-3,1-5,3-7c1-2,4-3,6-4c3-1,6-1,8-1c3,0,5,1,7,2c2,1,3,3,4,4l3,3" />
-  </svg>
-);
+import GlobalTrafficMap from './GlobalTrafficMap';
 
 const Dashboard: React.FC = () => {
   const chartData = [
@@ -105,11 +99,7 @@ const Dashboard: React.FC = () => {
           </div>
 
           <div className="flex-1 min-h-[220px] flex items-center justify-center relative">
-            <WorldMapSVG />
-            <div className="absolute inset-0 flex items-center justify-center">
-               <div className="w-16 h-16 bg-blue-500/20 rounded-full animate-ping"></div>
-               <div className="absolute w-4 h-4 bg-blue-500 rounded-full shadow-[0_0_15px_#3b82f6]"></div>
-            </div>
+            <GlobalTrafficMap className="opacity-80 translate-y-4" />
           </div>
 
           <div className="space-y-4 pt-6 border-t border-white/5">
