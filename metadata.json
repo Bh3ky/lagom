@@ -1,0 +1,9 @@
+
+{
+  "name": "Lagom Marketing OS",
+  "description": "A high-performance marketing automation and AI-driven campaign management platform for agencies and content creators.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
